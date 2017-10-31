@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.study.layout.constraint.constraintlayoutdemo"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+
+    sourceSets {
+        signingConfigs {
+            signConfig {
+                keyAlias 'key0'
+                keyPassword '768530'
+                storeFile file('fengxiaowei.jks')
+                storePassword '768530'
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.signConfig
+            ndk {
+                abiFilters = ["armeabi", "x86"]
+            }
+        }
+
+        debug {
+            debuggable true
+            jniDebuggable true
+            signingConfig signingConfigs.signConfig
+
+            ndk {
+                abiFilters = ["armeabi", "x86"]
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':baselibrary')
+}
