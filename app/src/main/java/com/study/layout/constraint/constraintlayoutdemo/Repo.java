@@ -100,7 +100,7 @@ public class Repo extends HttpBaseModel {
     return "Repo{" +
         "status=" + status +
         ", message='" + message + '\'' +
-        ", data=" + data +
+        ", layoutData=" + data +
         ", msg='" + msg + '\'' +
         '}';
   }
