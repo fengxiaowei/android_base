@@ -72,3 +72,6 @@
 -keepclassmembers class * extends org.greenrobot.eventbus.util.ThrowableFailureEvent {
     <init>(java.lang.Throwable);
 }
+
+# kotlinx的混淆配置（SimpleRecyclerView使用了kotlin，但是找不到混淆配置）
+-dontwarn kotlinx.**

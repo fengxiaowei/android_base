@@ -52,7 +52,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
   /**
    * 钩子方法，让子类初始化DataBinding
    */
-  public abstract void initBind();
+  public void initBind() {};
 
   /**
    * 解决EventBus没有注册消息的异常

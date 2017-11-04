@@ -5,25 +5,30 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_toast"
+    <TextView
+        android:id="@+id/tv_error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Toast" />
+        android:background="#FF0"
+        android:padding="10dp"
+        android:text='错误' />
 
-    <Button
-        android:id="@+id/btn_bind"
+    <TextView
+        android:id="@+id/tv_success"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="数据绑定测试" />
+        android:layout_marginTop="30dp"
+        android:background="#FF0"
+        android:padding="10dp"
+        android:text='成功' />
 
-    <Button
-        android:id="@+id/btn_more"
+    <TextView
+        android:id="@+id/tv_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="更多测试" />
+        android:layout_marginTop="30dp"
+        android:background="#FF0"
+        android:padding="10dp"
+        android:text='信息' />
 
 </LinearLayout>

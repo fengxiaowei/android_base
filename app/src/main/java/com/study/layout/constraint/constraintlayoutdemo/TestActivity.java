@@ -6,10 +6,11 @@ import android.widget.Button;
 
 import fengxiaowei.baselibrary.activity.BaseActivity;
 
-public class TestActivity extends BaseActivity {
+public class TestActivity extends BaseActivity implements View.OnClickListener {
 
   private Button btn_bind;
   private Button btn_more;
+  private Button mBtnToast;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -30,18 +31,27 @@ public class TestActivity extends BaseActivity {
   private void initView() {
     btn_bind = findViewById(R.id.btn_bind);
     btn_more = findViewById(R.id.btn_more);
+    mBtnToast = findViewById(R.id.btn_toast);
+    btn_bind.setOnClickListener(this);
+    btn_more.setOnClickListener(this);
 
-    btn_bind.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
+    mBtnToast.setOnClickListener(this);
+  }
+
+  @Override
+  public void onClick(View v) {
+    switch (v.getId()) {
+      case R.id.btn_toast:
+        launchActivity(context, ToastActivity.class);
+        break;
+      case R.id.btn_bind:
         launchActivity(context, DataBindingActivity.class);
-      }
-    });
-    btn_more.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
+        break;
+      case R.id.btn_more:
         launchActivity(context, MainActivity.class);
-      }
-    });
+        break;
+      default:
+        break;
+    }
   }
 }

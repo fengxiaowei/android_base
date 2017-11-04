@@ -50,8 +50,11 @@ dependencies {
     compile 'com.bigkoo:alertview:1.0.3'
 
     // https://github.com/jaychang0917/SimpleRecyclerView
-//    compile('com.github.jaychang0917:SimpleRecyclerView:1.2.6') {
-//        exclude group: 'com.android.support'
-//    }
+    compile('com.github.jaychang0917:SimpleRecyclerView:1.2.6') {
+        exclude group: 'com.android.support'
+    }
+
+    // https://github.com/GrenderG/Toasty
+    compile 'com.github.GrenderG:Toasty:1.2.5'
 
 }
