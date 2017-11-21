@@ -26,4 +26,19 @@
         android:layout_marginTop="20dp"
         android:text="更多测试" />
 
+
+    <Button
+        android:id="@+id/btn_custom_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="自定义View" />
+
+    <Button
+        android:id="@+id/btnVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Video" />
+
 </LinearLayout>
