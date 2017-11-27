@@ -38,11 +38,6 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
   public abstract int getLayoutID();
 
 
-  /**
-   * 在基类实现OnClickListener主要是方便DataBinding的事件绑定（在布局文件中，事件的处理对象就可以是任何OnClickListener的子类了）
-   *
-   * @param v
-   */
   @Override
   public void onClick(View v) {
 

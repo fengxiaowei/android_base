@@ -21,7 +21,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.bbvad.whatshot.test.MainActivity"></activity>
-        <activity android:name="com.bbvad.whatshot.test.DataBindingActivity"></activity>
         <activity android:name="com.bbvad.whatshot.test.ToastActivity"></activity>
         <activity android:name="com.bbvad.whatshot.test.VideoActivity"></activity>
         <activity android:name="com.bbvad.whatshot.app.custom.ViewActivity"></activity>
