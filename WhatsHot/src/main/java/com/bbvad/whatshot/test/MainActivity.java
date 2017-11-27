@@ -34,12 +34,6 @@ public class MainActivity extends BaseActivity {
     return R.layout.activity_main;
   }
 
-  @Override
-  public void initBind() {
-    if (dataBinding == null)
-      return;
-  }
-
   private void initView() {
     mImageViewMy = findViewById(R.id.my_image_view);
     mImageViewMy.setOnClickListener(this);
