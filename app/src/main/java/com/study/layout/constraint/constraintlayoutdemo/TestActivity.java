@@ -10,7 +10,6 @@ import fengxiaowei.baselibrary.activity.BaseActivity;
 
 public class TestActivity extends BaseActivity implements View.OnClickListener {
 
-  private Button btn_bind;
   private Button btn_more;
   private Button mBtnToast;
   private Button btn_custom_view;
@@ -27,18 +26,12 @@ public class TestActivity extends BaseActivity implements View.OnClickListener {
     return R.layout.activity_test;
   }
 
-  @Override
-  public void initBind() {
-
-  }
 
   private void initView() {
-    btn_bind = findViewById(R.id.btn_bind);
     btn_more = findViewById(R.id.btn_more);
     mBtnToast = findViewById(R.id.btn_toast);
     btn_custom_view = findViewById(R.id.btn_custom_view);
     btnVideo = findViewById(R.id.btnVideo);
-    btn_bind.setOnClickListener(this);
     btn_more.setOnClickListener(this);
     mBtnToast.setOnClickListener(this);
     btn_custom_view.setOnClickListener(this);
@@ -50,9 +43,6 @@ public class TestActivity extends BaseActivity implements View.OnClickListener {
     switch (v.getId()) {
       case R.id.btn_toast:
         launchActivity(context, ToastActivity.class);
-        break;
-      case R.id.btn_bind:
-        launchActivity(context, DataBindingActivity.class);
         break;
       case R.id.btn_more:
         launchActivity(context, MainActivity.class);

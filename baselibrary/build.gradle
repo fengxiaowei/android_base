@@ -61,4 +61,7 @@ dependencies {
     // https://github.com/lipangit/JiaoZiVideoPlayer
     compile 'cn.jzvd:jiaozivideoplayer:6.1.2'
 
+    // https://github.com/gyf-dev/ImmersionBar
+    compile 'com.gyf.barlibrary:barlibrary:2.3.0'
+
 }

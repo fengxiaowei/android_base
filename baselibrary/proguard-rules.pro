@@ -78,3 +78,6 @@
 
 # kotlinx的混淆配置（SimpleRecyclerView使用了kotlin，但是找不到混淆配置）
 -dontwarn kotlinx.**
+
+# 侵入式状态栏库的混淆
+-keep class com.gyf.barlibrary.* {*;}
